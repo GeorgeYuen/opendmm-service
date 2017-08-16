@@ -1,4 +1,4 @@
-FROM scratch
+FROM alpine
 MAINTAINER FandiYuan  <georgeyuan@diamondyuan.com>
 COPY /opendmm/opendmm-s /
 CMD ["/opendmm-s"]
