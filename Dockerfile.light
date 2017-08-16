@@ -1,4 +1,4 @@
 FROM scratch
 MAINTAINER FandiYuan  <georgeyuan@diamondyuan.com>
-ADD /opendmm/opendmm-s /
+COPY /opendmm/opendmm-s /
 CMD ["/opensmm-s"]
