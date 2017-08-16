@@ -7,4 +7,4 @@ copy / /opendmm/
 
 RUN cd /opendmm && \
 	go build  && \
-	ls
+	mv opendmm /opendmm-s
