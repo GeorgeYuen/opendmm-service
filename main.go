@@ -13,9 +13,10 @@ func searchDmm(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	uri := r.RequestURI
 	w.Write([]byte(search(uri[len(*pattern):])))
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 }
 
-var pattern  *string
+var pattern *string
 
 func search(query string) (result string) {
 	log.Println("start search " + query)
